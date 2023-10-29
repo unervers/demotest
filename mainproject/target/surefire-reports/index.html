@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,6 +102,11 @@
                       <span>
                         <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-tests.TestNGDemo" title="tests.TestNGDemo" hash-for-method="loginAndPass(agileway, testwise)">loginAndPass(agileway, testwise)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests.TestNGDemo" title="tests.TestNGDemo" hash-for-method="ticketPage">ticketPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-tests.TestNGDemo -->
@@ -128,6 +133,13 @@
                   </a> <!-- loginAndPass(agileway, testwise) -->
                   <span class="method-name">loginAndPass</span>
                   <span class="parameters">(agileway, testwise)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ticketPage">
+                  </a> <!-- ticketPage -->
+                  <span class="method-name">ticketPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +195,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginAndPass')
 data.setCell(0, 2, 'tests.TestNGDemo')
-data.setCell(0, 3, 15);
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ticketPage')
+data.setCell(1, 2, 'tests.TestNGDemo')
+data.setCell(1, 3, 0);
 window.suiteTableData['tests.TestNGDemo']= { tableData: data, tableDiv: 'times-div-tests.TestNGDemo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-tests.TestNGDemo">
               </div> <!-- times-div-tests.TestNGDemo -->
             </div> <!-- times-div -->
@@ -227,7 +243,7 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginAndPass(agileway, testwise)</span>
-                <span class="method-start">34468 ms</span>
+                <span class="method-start">19430 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

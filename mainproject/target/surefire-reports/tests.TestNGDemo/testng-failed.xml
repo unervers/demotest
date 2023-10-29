@@ -6,6 +6,7 @@
       <class name="tests.TestNGDemo">
         <methods>
           <include name="loginAndPass"/>
+          <include name="ticketPage"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- tests.TestNGDemo -->

@@ -13,13 +13,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import poms.LoginPageFactory;
+import poms.TicketPageFactory;
 
 
 public class TestNGDemo {
     private static WebDriver driver;
     private static String ADDRESS = "https://travel.agileway.net/";
     private static String SHEET = "logpass";
+    private static String ORIGIN = "Sydney";
+    private static String DESTINATION = "New York";
     private static LoginPageFactory loginPage;
+    private static TicketPageFactory ticketPage;
     
     public TestNGDemo() {
     }
@@ -33,6 +37,15 @@ public class TestNGDemo {
         loginPage.clickSignIn();
         Assert.assertTrue(driver.getPageSource().contains("Signed in"));
     }
+    
+    @Test (dependsOnMethods = "loginAndPass")
+    public void ticketPage(){
+        ticketPage.clickOneway();
+        ticketPage.selectorigin(ORIGIN);
+        ticketPage.selectdestination(DESTINATION);
+        ticketPage.clickSubmit();
+    }
+    
     
 
 

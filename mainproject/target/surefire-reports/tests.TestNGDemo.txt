@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: tests.TestNGDemo
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 45.209 sec <<< FAILURE!
-setUpClass(tests.TestNGDemo)  Time elapsed: 37.172 sec  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 23.015 sec <<< FAILURE!
+setUpClass(tests.TestNGDemo)  Time elapsed: 19.483 sec  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
 Current browser version is 118.0.5993.118 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
 Host info: host: 'DESKTOP-4I5S0QG', ip: '192.168.31.32'
@@ -22,6 +22,6 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:107)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:87)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
-	at tests.TestNGDemo.setUpClass(TestNGDemo.java:57)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at tests.TestNGDemo.setUpClass(TestNGDemo.java:55)
 
