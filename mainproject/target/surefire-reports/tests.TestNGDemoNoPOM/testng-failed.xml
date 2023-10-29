@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [tests.TestNGDemoNoPOM]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="tests.TestNGDemoNoPOM">
+        <methods>
+          <include name="opensite"/>
+          <include name="setUpMethod"/>
+          <include name="loginAndPass"/>
+          <include name="setUpClass"/>
+          <include name="logoff"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- tests.TestNGDemoNoPOM -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [tests.TestNGDemoNoPOM] -->
